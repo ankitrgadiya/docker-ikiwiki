@@ -10,9 +10,13 @@ cd /wiki
 ikiwiki $SRC $DEST --url=http://$VIRTUAL_HOST --dumpsetup wiki.setup
 
 # Update .setup file
-ikiwiki --changesetup wiki.setup --cgi \
+ikiwiki --changesetup wiki.setup \
+	--cgi \
 	--cgiurl http://$VIRTUAL_HOST/ikiwiki.cgi \
-	--adminuser elliot --plugin websetup --set cgi_wrapper=$DESK/ikiwiki.cgi
+	--adminuser elliot \
+	--plugin websetup \
+	--plugon 404 \
+	--set cgi_wrapper=$DESK/ikiwiki.cgi
 
 ikiwiki --setup wiki.setup
 
