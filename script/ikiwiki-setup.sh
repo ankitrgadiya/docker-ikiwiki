@@ -12,12 +12,7 @@ ikiwiki $SRC $DEST --url=http://$VIRTUAL_HOST --dumpsetup wiki.setup
 # Update .setup file
 ikiwiki --changesetup wiki.setup --cgi \
 	--cgiurl http://$VIRTUAL_HOST/ikiwiki.cgi \
-	--adminuser elliot --plugin websetup --wrapper $DESK/ikiwiki.cgi
-
-# Update cgi_wrapper
-WRAPPER="cgi_wrapper: ''"
-NEW_WRAPPER="cgi_wrapper: $DEST/ikiwiki.cgi"
-sed -i -e "s@${WRAPPER}@${NEW_WRAPPER}@g" wiki.setup
+	--adminuser elliot --plugin websetup --set cgi_wrapper=$DESK/ikiwiki.cgi
 
 ikiwiki --setup wiki.setup
 
