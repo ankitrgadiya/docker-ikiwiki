@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+    - docker
+
+script:
+    - docker build -t $DOCKER_USERNAME/ikiwiki .
+
+after_success:
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+    - docker push $DOCKER_USERNAME/ikiwiki
