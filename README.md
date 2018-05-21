@@ -1,6 +1,6 @@
 # Ikiwiki Docker Container
 
-[![Build Status](https://travis-ci.org/ankitrgadiya/docker-ikiwiki.svg?branch=master)](https://travis-ci.org/ankitrgadiya/docker-ikiwiki)
+[![Build Status](https://travis-ci.com/ankitrgadiya/docker-ikiwiki.svg?branch=master)](https://travis-ci.com/ankitrgadiya/docker-ikiwiki)
 
 This Docker image is supposed to be used with
 [Nginx-Proxy](https://hub.docker.com/r/jwilder/nginx-proxy/).
