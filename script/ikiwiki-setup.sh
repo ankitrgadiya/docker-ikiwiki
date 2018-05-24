@@ -15,7 +15,7 @@ ikiwiki --changesetup wiki.setup \
 	--cgiurl http://$VIRTUAL_HOST/ikiwiki.cgi \
 	--adminuser elliot \
 	--plugin websetup \
-	--plugon 404 \
+	--plugin 404 \
 	--set cgi_wrapper=$DESK/ikiwiki.cgi
 
 ikiwiki --setup wiki.setup
