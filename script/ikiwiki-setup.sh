@@ -13,7 +13,7 @@ ikiwiki $SRC $DEST --url=http://$VIRTUAL_HOST --dumpsetup wiki.setup
 ikiwiki --changesetup wiki.setup \
 	--cgi \
 	--cgiurl http://$VIRTUAL_HOST/ikiwiki.cgi \
-	--adminuser elliot \
+	--adminuser admin \
 	--plugin websetup \
 	--plugin 404 \
 	--set cgi_wrapper=$DESK/ikiwiki.cgi
